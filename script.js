@@ -97,7 +97,7 @@ function deleteImage(id) {
     };
 }
 
-// 파일 선택 및 EXIF 데이터 처리
+// 파일 선택 및 처리
 function handleFileSelect(file) {
     if (file.size > 1024 * 1024 * 5) { // 파일 크기가 5MB를 초과할 경우
         alert("File size exceeds 5MB. Please upload a smaller file.");
