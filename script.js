@@ -110,7 +110,7 @@ function handleFileSelect(file) {
         
         // 현재 시간으로 설정
         const currentDateTime = new Date().toISOString();
-        const note = document.getElementById('note').value; // 메모 가져오기
+        const note = document.getElementById('med-note').value; // 메모 가져오기
         saveImage(newData, currentDateTime, note); // IndexedDB에 이미지 저장
         loadImages(); // 저장 후 이미지 목록 갱신
     };
