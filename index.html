@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADHD Medication Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script> <!-- EXIF.js CDN -->
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>ADHD Medication Tracker</h1>
+    </header>
+    <div class="container">
         <form id="med-form">
             <label for="med-photo">Upload your photo after taking medication:</label>
             <input type="file" id="med-photo" accept="image/*" required>
+            <input type="text" id="med-note" placeholder="Add a note (optional)">
             <button type="submit">Upload</button>
         </form>
         <div id="history">
             <h2>History</h2>
             <ul id="photo-list"></ul>
         </div>
+        <div id="storage-info"></div>
     </div>
+    <footer>
+        <img src="https://seeklogo.com/images/M/medicine-symbol-logo-C5F32D7618-seeklogo.com.png" alt="Medicine Symbol" class="footer-image">
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
