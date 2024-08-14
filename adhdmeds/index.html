@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Medication Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ADHD Medication Tracker</h1>
+        <form id="med-form">
+            <label for="med-photo">Upload your photo after taking medication:</label>
+            <input type="file" id="med-photo" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="history">
+            <h2>History</h2>
+            <ul id="photo-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
